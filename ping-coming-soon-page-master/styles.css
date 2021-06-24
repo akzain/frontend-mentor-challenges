@@ -30,12 +30,17 @@
   margin-top: -1rem;
 }
 
+#emailholder {
+  width: 25%;
+}
+
 #email {
   font-family: "Libre Franklin", "sans-serif";
   font-weight: 300;
   box-sizing: border-box;
   border-radius: 40px;
   border: 1px solid var(--PaleBlue);
+  width: 90%;
   width: 350px;
   height: 50px;
   padding: 1.25rem;
@@ -77,7 +82,7 @@ form {
 }
 
 .dashboardImage__image {
-  width: 35%;
+  width: 500px;
 }
 
 .page__socialMediaIcons {
@@ -126,7 +131,7 @@ form {
 }
 
 @media screen and (max-width: 420px) {
-  .page__firstContent h1 {
+  h1 {
     font-size: 30px;
   }
   .firstContent__subscribe {
@@ -137,7 +142,7 @@ form {
   }
   #validate {
     width: 330px;
-    margin-top: 1rem;
+		margin-top: -40px;
   }
   .dashboardImage__image {
     width: 350px;
@@ -149,4 +154,8 @@ form {
   .page__footer {
     margin-top: 1rem;
   }
+	form{
+		display: flex;
+		flex-direction: column;
+	}
 }
