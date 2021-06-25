@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<title>Frontend Mentor | Ping coming soon page (coded by MidouWebdev)</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
-	<script src="https://kit.fontawesome.com/64fdbfc31c.js" crossorigin="anonymous"></script>
-</head>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
 
-<body>
-	<div class="page">
-		<div>
-			<img class="logo" src="images/logo.svg">
-		</div>
-		<br />
-		<!-- start of first content  -->
-		<div class="page__firstContent">
-			<h1>
-				We are launching
-				<span>
-					soon!
-				</span>
-			</h1>
-			<p class="firstContent__subscribe">
-				Subscribe and get notified
-			</p>
-			<br />
-			<form name="form1">
-				<section>
-					<input id="email" placeholder="Your email address..." required>
-					<br>
-					<div class="input">Please provide a valid email address</div>
-					</section>
-					
-				<button type="submit" id="validate">
-					Notify Me
-				</button>
-			</form>
-		</div>
-		<!-- end of first content -->
+        <title>Frontend Mentor | Ping coming soon page</title>
+    </head>
+    <body>
+        <div class="container">
+            <img
+                class="logo_image"
+                src="./images/logo.svg"
+                alt=""
+                class="logo"
+            />
+            <div class="header">
+                <p>We are launching <span>soon!</span></p>
+                <p>Subscribe and get notified</p>
+            </div>
 
-		<div class="page__dashboardImage">
-			<img class="dashboardImage__image" src="images/illustration-dashboard.png">
-		</div>
+            <div class="subscribe">
+                <form id="form" novalidate`>
+                    <div>
+                        <input
+                            id="email-input"
+                            class="v"
+                            type="email"
+                            placeholder="Your email address.."
+                            required
+                        />
+                        <p class="hide" id="error-message">
+                            Please provide a valid email address.
+                        </p>
+                    </div>
+                    <button type="submit">Notify Me</button>
+                </form>
+            </div>
 
-		<div class="page__socialMediaIcons">
-			<div class="socialMediaIcons__icon">
-				<i class="fab fa-facebook-f"></i>
-			</div>
-			&nbsp;
-			<div class="socialMediaIcons__icon">
-				<i class="fab fa-twitter"></i>
-			</div>
-			&nbsp;
-			<div class="socialMediaIcons__icon">
-				<i class="fab fa-instagram"></i>
-			</div>
-		</div>
-		<br />
-		<div class="page__footer">
-			<p class="copyright">
-				&copy; Copyright Ping. All rights reserved.
-			</p>
-			<p class="page__bottomText">
-				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="blank">Frontend Mentor</a>.
-				Coded by <a href="https://github.com/akzain">akzain</a>.
-			</p>
-		</div>
-	</div>
-	<script src="js.js"></script>
-</body>
+            <img
+                class="image"
+                src="./images/illustration-dashboard.png"
+                alt=""
+            />
 
+            <div class="footer">
+                <div class="socials">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <p>&copy; Copyright Ping. All rights reserved.</p>
+            </div>
+            
+            <footer>
+                <p class="attribution">
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                    Coded by <a href="#">Your Name Here</a>.
+                </p>
+            </footer>
+        </div>
+        <script
+            src="https://kit.fontawesome.com/cdc739a8c1.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js.js"></script>
+    </body>
 </html>
