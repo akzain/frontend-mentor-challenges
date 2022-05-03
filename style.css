@@ -75,3 +75,10 @@ h1 {
     width: 395px;
   }
 }
+
+.projects{
+  display: flex;
+}
+.card{
+  margin: 20px;
+}
